@@ -94,7 +94,6 @@
 .logo2 {
   width: 87px;
   height: 29px;
-  display: none;
 }
 
 /* Cart icon */
@@ -276,13 +275,5 @@ width: auto;
   height: auto;
 }
 
-.logo2{
-    display: none;
 
-}
-
-
-.logo3{
-  display: none;
-}
 }
