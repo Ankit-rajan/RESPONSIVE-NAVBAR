@@ -1,0 +1,288 @@
+/* Reset default margins, paddings and set default font for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto Condensed, roboto, Microsoft JhengHei, sans-serif;
+}
+
+/* Navbar main container */
+.nav_container {
+  display: flex;
+  background-color: #000000; /* black background */
+  align-items: center; /* vertically center items */
+  height: 59px;
+  justify-content: space-around; /* space out logo, links, icons */
+  margin-top: -2px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Navigation links container */
+.nav_links {
+  display: flex;
+  text-decoration: none;
+}
+
+/* Unordered list inside nav */
+.ul1 {
+  list-style-type: none; /* remove bullet points */
+  color: white;
+  display: flex;
+  gap: 70px; /* space between list items */
+  margin-right: 8px;
+}
+
+/* Anchor tags inside nav list */
+.ul1 a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.ul1 a:hover {
+  color: rgba(249, 89, 89, 0.816);
+}
+
+/* Logo container (left side) */
+.nav_logo1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 10px;
+  transition: all 2s ease;
+}
+
+/* Main logo image */
+.logo1 {
+  width: 207px;
+  height: 126px;
+  margin-left: -69px; /* pushes image left for custom alignment */
+  transition: all 2s ease;
+
+}
+
+/* Right side container (icons & other logos) */
+.nav_right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: -28px;
+}
+
+/* Vertical separator line */
+.vertical-line {
+  border-left: 1px solid rgb(39, 39, 39);
+  height: 21px;
+  margin: 0 10px;
+  width: 0px;
+}
+
+/* Custom horizontal line (unused or used elsewhere?) */
+.hr {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 35px;
+  background-color: rgb(89, 86, 86);
+  border: none;
+}
+
+/* ASUS grey logo */
+.logo2 {
+  width: 87px;
+  height: 29px;
+  display: none;
+}
+
+/* Cart icon */
+.logo3 {
+  width: 26px;
+  height: 25px;
+  color: rgb(142, 142, 142);
+  filter: brightness(0) invert(1); /* makes dark icon appear white */
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+/* Profile/user icon */
+.logo4 {
+  width: 22px;
+  height: 22px;
+}
+
+/* FontAwesome icon style */
+.icon {
+  color: white;
+  font-size: 24px;
+}
+
+#firstcheck {
+  display: none;
+}
+
+.open_sidebar_button,
+.close_sidebar_button {
+  padding: 0 20px;
+  display: none;
+}
+
+.mobile-only {
+  display: none;
+}
+
+
+/* @media (max-width: 1025px) {
+  .nav_links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    
+    left:100%;
+    z-index: 10;
+width: 100%;
+    height: 650px;
+    background-color: rgb(0, 0, 0);
+    color: black;
+    
+  }
+
+  .nav_container {
+  z-index: 100;
+}
+  .nav_links a{
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: flex-start;
+    color: white;
+    transition: 1s ease-out;
+  }
+  .open_sidebar_button,
+.close_sidebar_button {
+ 
+  display: block;
+}
+#firstcheck:checked ~ .nav_links{
+    
+left: 0;
+}
+} */
+/* @media(max-width: 1200px){
+
+} */
+
+@media (max-width: 1025px) {
+
+.nav_logo1{
+    justify-content: center;
+    margin-left: 0;
+    width: 100%;
+
+}
+.logo1{
+    margin-left:0 ;
+height: 100px;
+width: auto;
+}
+
+
+
+  .nav_links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 60px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    /* transition: all 0.5s; */
+
+    z-index: 10;
+  }
+
+  .ul1 {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+
+  .ul1 li {
+    width: 100%;
+  }
+
+  .nav_links a {
+    display: block;
+    width: 100%;
+    padding: 20px 30px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+  }
+
+  #firstcheck:checked ~ .nav_links {
+    transform: translateX(0%);
+  }
+
+  .open_sidebar_button,
+  .close_sidebar_button {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav_container {
+    justify-content: space-between;
+    padding: 0 10px;
+    z-index: 100;
+  }
+
+  .close_sidebar_button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .mobile-only {
+  display: block;
+}
+
+.mobile-headerperson {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 10px;
+}
+
+.horizontal-line {
+  border-top: 1px solid rgb(39, 39, 39);
+  width: 80%;
+  margin: 20px auto;
+}
+
+.mobile-logo2 {
+  padding: 10px 30px;
+}
+
+.mobile-logo2 img {
+  width: 87px;
+  height: auto;
+}
+
+.logo2{
+    display: none;
+
+}
+
+
+.logo3{
+  display: none;
+}
+}
