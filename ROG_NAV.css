@@ -139,6 +139,14 @@
   display: none;
 }
 
+
+
+
+
+
+
+
+
 @media (max-width: 1310px) {
   .ul1 a {
     font-size: 13px;
@@ -182,6 +190,7 @@
 
   #firstcheck:checked ~ .nav_links {
     transform: translate(0%);
+    
   }
 
   .mobile-view {
@@ -217,7 +226,8 @@
   }
 
 
-  
+
+
 
   /* 
   .open_sidebar_button{
