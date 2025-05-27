@@ -128,7 +128,9 @@
 .close_sidebar_button {
   display: none;
 }
-
+.close_sidebar_button svg {
+  fill: black;
+}
 
 .mobile-view {
   display: none;
