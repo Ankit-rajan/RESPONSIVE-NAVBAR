@@ -16,7 +16,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/Picsart_25-05-24_13-43-52-697.png">
 
-    <!-- styleSheet CSS -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="ROG_NAV.css">
 </head>
 
@@ -25,8 +25,8 @@
     <!-- Navigation Bar Start -->
     <nav class="nav_container">
 
-        <!-- Sidebar Button (Mobile) -->
-        <input type="radio" id="firstcheck" name="menu-toogle">
+        <!-- Sidebar Toggle Button (Mobile) -->
+        <input type="checkbox" id="firstcheck">
         <label for="firstcheck" class="open_sidebar_button">
             <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3">
                 <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
@@ -40,18 +40,12 @@
 
         <!-- Center: Navigation Links -->
         <div class="nav_links">
-
+            <label for="firstcheck" class="close_sidebar_button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </label>
             <ul class="ul1">
-                <div id="close-button">
-                    <input type="radio" name="menu-toogle" id="menu-close">
-                    <label for="menu-close" class="close_sidebar_button">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
-                            fill="#e3e3e3">
-                            <path
-                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                        </svg>
-                    </label>
-                </div>
                 <li><a href="#">PRODUCTS</a></li>
                 <li><a href="#">INNOVATION</a></li>
                 <li><a href="#">DOWNLOAD</a></li>
@@ -65,8 +59,7 @@
         <div class="nav_right">
             <img src="images/ASUS_logo_grey1.png" width="10px" alt="ASUS logo grey" class="logo2">
             <hr class="vertical-line">
-            <i class="fa-solid fa-magnifying-glass"
-                style="color: rgba(255, 255, 255, 0.522); font-size: 22px; padding: 8px; margin-top: 5px;"></i>
+            <i class="fa-solid fa-magnifying-glass" style="color: rgba(255, 255, 255, 0.522); font-size: 22px; padding: 8px; margin-top: 5px;"></i>
             <img src="images/Picsart_25-05-24_01-45-28-406.png" alt="headerperson" class="logo4">
             <img src="https://cdn-icons-png.flaticon.com/128/4360/4360728.png" alt="nav_cart" class="logo3">
         </div>

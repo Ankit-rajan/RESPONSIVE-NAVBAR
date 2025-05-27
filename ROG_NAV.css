@@ -1,4 +1,4 @@
-/* Reset default margins, paddings and set default font for all elements */
+/* Reset default spacing and apply default font */
 * {
   margin: 0;
   padding: 0;
@@ -6,47 +6,45 @@
   font-family: Roboto Condensed, roboto, Microsoft JhengHei, sans-serif;
 }
 
-/* Navbar main container */
+/* Navbar container setup */
 .nav_container {
   display: flex;
   background-color: #000000; /* black background */
-  align-items: center; /* vertically center items */
+  align-items: center;
   height: 59px;
-  justify-content: space-around; /* space out logo, links, icons */
+  justify-content: space-around;
   margin-top: -2px;
   width: 100vw;
   position: fixed;
-  top: 0;
-  left: 0;
 }
 
-/* Navigation links container */
+/* Wrapper for nav links */
 .nav_links {
   display: flex;
   text-decoration: none;
 }
 
-/* Unordered list inside nav */
+/* Main navigation list */
 .ul1 {
-  list-style-type: none; /* remove bullet points */
+  list-style-type: none;
   color: white;
   display: flex;
-  gap: 30px; /* space between list items */
+  gap: 70px;
   position: relative;
 }
 
-/* Anchor tags inside nav list */
+/* Individual nav links */
 .ul1 a {
   text-decoration: none;
   color: white;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .ul1 a:hover {
   color: rgba(249, 89, 89, 0.816);
 }
 
-/* Logo container (left side) */
+/* Left logo wrapper */
 .nav_logo1 {
   display: flex;
   align-items: center;
@@ -54,14 +52,15 @@
   transition: all 2s ease;
 }
 
-/* Main logo image */
+/* ROG main logo */
 .logo1 {
   width: 207px;
   height: 126px;
   transition: all 2s ease;
+  margin-left: -7px;
 }
 
-/* Right side container (icons & other logos) */
+/* Right section container: ASUS, icons, etc. */
 .nav_right {
   display: flex;
   align-items: center;
@@ -76,7 +75,7 @@
   width: 0px;
 }
 
-/* Custom horizontal line  */
+/* Optional horizontal rule styling */
 .hr {
   display: flex;
   margin: 0;
@@ -86,83 +85,84 @@
   border: none;
 }
 
-/* ASUS grey logo */
+/* ASUS gray logo */
 .logo2 {
   width: 87px;
   height: 29px;
 }
 
-/* Cart icon */
+/* Shopping cart icon */
 .logo3 {
   width: 26px;
   height: 25px;
   color: rgb(142, 142, 142);
-  filter: brightness(0) invert(1); /* makes dark icon appear white */
+  filter: brightness(0) invert(1);
   margin-top: 3px;
   margin-left: 5px;
 }
 
-/* headerperson icon */
+/* User avatar icon */
 .logo4 {
   width: 22px;
   height: 22px;
 }
 
-/* FontAwesome icon style */
+/* FontAwesome icon styling */
 .icon {
   color: white;
   font-size: 24px;
 }
 
-/* #firstcheck {
+/* Sidebar checkbox (hidden) */
+#firstcheck {
   display: none;
-} */
-
-.open_sidebar_button {
-  padding: 0 20px;
 }
 
+/* Hamburger (open sidebar) button */
+.open_sidebar_button {
+  padding: 0 20px;
+  display: none;
+}
+
+/* Close sidebar button */
 .close_sidebar_button {
   display: none;
 }
 
-
-@media (max-width: 1025px) {
+@media (max-width: 1310px) {
   .ul1 a {
-    font-size: 12px;
-    color: black;
+    font-size: 13px;
   }
   .ul1 {
-     transform: translateX(-200%);
-     transition: all .8s;
+    gap: 40px;
   }
-  #firstcheck:checked ~ .nav_links > .ul1 {
-    display: flex;
-    flex-direction: column;
+}
+@media (max-width: 1025px) {
+  .nav_links {
     position: absolute;
-    top: 0px;
-    width: 70vw;
-    left: 0px;
+    left: 0;
+    top: 0;
+    width: 50vw;
     height: 100vh;
+    flex-direction: column;
     background-color: white;
-    transform: translateX(0%);
+  }
+  .ul1 {
+    flex-direction: column;
   }
 
-  #firstcheck:checked ~ .nav_links > .ul1 > div > .close_sidebar_button {
+  .ul1 a {
+    color: black;
+  }
+
+  .close_sidebar_button {
     display: block;
+    right: 0;
+    top: 0;
     position: absolute;
-    right: 0px;
-}
-
-  .nav_logo1 {
-    display: flex;
-    justify-content: center;
-    transition: all 2s ease;
+    z-index: 3;
   }
-  .logo2 {
-    display: none;
+  .open_sidebar_button {
+    display: block;
   }
-}
-
-@media (min-width: 1025px) {
 }
