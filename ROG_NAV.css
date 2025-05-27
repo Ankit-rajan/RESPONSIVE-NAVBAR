@@ -129,6 +129,16 @@
   display: none;
 }
 
+.mobile-view {
+  display: none;
+}
+.mobile-view-vertical-line {
+  display: none;
+}
+.mobile-view-asuslogo {
+  display: none;
+}
+
 @media (max-width: 1310px) {
   .ul1 a {
     font-size: 13px;
@@ -146,9 +156,13 @@
     height: 100vh;
     flex-direction: column;
     background-color: white;
+    transform: translate(-100%);
+    transition: all 0.3s;
+    padding-left: 20px;
   }
   .ul1 {
     flex-direction: column;
+    margin-top: 44px;
   }
 
   .ul1 a {
@@ -164,5 +178,64 @@
   }
   .open_sidebar_button {
     display: block;
+  }
+
+  #firstcheck:checked ~ .nav_links {
+    transform: translate(0%);
+  }
+
+  .mobile-view {
+    display: block;
+    width: 33px;
+    margin-top: 10px;
+  }
+
+  .mobile-view-vertical-line {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .mobile-view-asuslogo {
+    display: block;
+    width: 81px;
+    margin-top: 10px;
+  }
+
+  .logo2 {
+    display: none;
+  }
+  .vertical-line {
+    display: none;
+  }
+  .logo4 {
+    display: none;
+  }
+.nav_container {
+    justify-content: space-between;
+    padding-right: 15px;
+  }
+
+  /* 
+  .open_sidebar_button{
+    margin-left: -950px;
+    position: absolute;
+  }
+
+  .logo3{
+   margin-left: 173px;
+    position: absolute;
+  }
+  i{
+    position: absolute;
+    display: flex;
+    
+  } */
+}
+
+@media (max-width: 950px) {
+  .nav_container {
+    justify-content: space-between;
+    padding-right: 15px;
   }
 }
