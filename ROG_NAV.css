@@ -29,7 +29,7 @@
   list-style-type: none;
   color: white;
   display: flex;
-  gap: 65px;
+  gap: 64px;
   position: relative;
 }
 
@@ -49,14 +49,14 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  transition: all 2s ease;
+  /* transition: all 2s ease; */
 }
 
 /* ROG main logo */
 .logo1 {
   width: 190px;
-  height: 120px;
-  transition: all 2s ease;
+  height: 113px;
+  transition: all  ease-in-out .10s ;
   margin-left: -50px;
 }
 
@@ -64,17 +64,18 @@
 .nav_right {
   display: flex;
   align-items: center;
-     margin-right: -26px;
+     /* margin-right: -26px; */
   gap: 10px;
 }
 
 /* Vertical separator line */
 .vertical-line {
-  border-left: 1px solid rgb(39, 39, 39);
-  height: 22px;
-  margin: 0 ;
-  margin-left: 4px;
+  border: none;
+border-left: 1px solid gray;
+  height: 21px;
+  margin-left: 9px;
   width: 0px;
+  
 }
 
 /* Optional horizontal rule styling */
@@ -93,6 +94,7 @@
   height: 29px; */
   width: 75px;
     height: 25px;
+    margin-top: 2px;
 }
 
 /* Shopping cart icon */
@@ -151,6 +153,13 @@
   display: none;
 }
 
+
+.search-icon {
+  height: 35px;
+  width: 29px;
+}
+
+
 @media (max-width: 1310px) {
   .ul1 a {
     font-size: 13px;
@@ -159,6 +168,8 @@
     gap: 40px;
   }
 }
+
+
 @media (max-width: 1025px) {
   .nav_links {
     position: absolute;
@@ -176,7 +187,7 @@
   .logo1 {
     width: 193px;
     height: 122px;
-    transition: all 2s ease;
+    transition: all 3s ease-in-out;
     /* margin-left: -7px; */
   }
 
@@ -255,15 +266,37 @@
     z-index: 2;
   }
 
-  .fa-magnifying-glass {
+  /* .fa-magnifying-glass {
     font-size: 18px !important;
-  }
+  } */
+  
 
   .logo3 {
     width: 23px;
     height: 23px;
   }
+
+ .search-icon {
+    height: 28px;
+    width: 25px;
+  }
+
 }
+
+@media (max-width: 1150px) {
+ .nav_container {
+    justify-content: space-between;
+    padding-right: 15px;
+  }
+  .logo1 {
+    width: 190px;
+    height: 113px;
+    transition: all ease-in-out .10s;
+    margin-left: -8px;
+}
+
+}
+
 
 @media (max-width: 950px) {
   .nav_container {
