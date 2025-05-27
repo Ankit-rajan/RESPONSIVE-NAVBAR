@@ -140,7 +140,10 @@
 }
 
 
-
+/* sidebaroverly */
+.sidebar_overly{
+  display:none;
+}
 
 
 
@@ -233,7 +236,7 @@
   #firstcheck:checked ~ .sidebar_overly{
   display:block;
   position: fixed;
-  inset:0 ;
+  inset:0 ; /* inset: 0; means top, right, bottom, and left are all set to 0, so the element covers the entire area of its positioned parent */
   background-color: #00000000;
   z-index: 2;
 }
