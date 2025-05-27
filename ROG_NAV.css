@@ -236,10 +236,7 @@
     padding-right: 15px;
   }
 
-
-
-
-
+/* sidebar_overly@media quary */
   #firstcheck:checked ~ .sidebar_overly{
   display:block;
   position: fixed;
@@ -248,21 +245,6 @@
   z-index: 2;
 }
 
-  /* 
-  .open_sidebar_button{
-    margin-left: -950px;
-    position: absolute;
-  }
-
-  .logo3{
-   margin-left: 173px;
-    position: absolute;
-  }
-  i{
-    position: absolute;
-    display: flex;
-    
-  } */
 }
 
 @media (max-width: 950px) {
