@@ -190,6 +190,7 @@
 
   #firstcheck:checked ~ .nav_links {
     transform: translate(0%);
+    z-index: 3;
     
   }
 
