@@ -250,6 +250,15 @@
     background-color: #00000000;
     z-index: 2;
   }
+
+  .fa-magnifying-glass {
+    font-size: 18px !important;
+  }
+
+  .logo3 {
+    width: 23px;
+    height: 23px;
+  }
 }
 
 @media (max-width: 950px) {
@@ -257,4 +266,12 @@
     justify-content: space-between;
     padding-right: 15px;
   }
+}
+
+@media (max-width: 360px) {
+.nav_container {
+    justify-content: space-between;
+    padding-right: 15px;
+}
+
 }
