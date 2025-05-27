@@ -142,16 +142,10 @@
   display: none;
 }
 
-
 /* sidebaroverly */
-.sidebar_overly{
-  display:none;
+.sidebar_overly {
+  display: none;
 }
-
-
-
-
-
 
 @media (max-width: 1310px) {
   .ul1 a {
@@ -166,7 +160,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 50vw;
+    width: 100vw;
     height: 100vh;
     flex-direction: column;
     background-color: white;
@@ -174,6 +168,14 @@
     transition: all 0.3s;
     padding-left: 20px;
   }
+
+  .logo1 {
+    width: 193px;
+    height: 122px;
+    transition: all 2s ease;
+    /* margin-left: -7px; */
+  }
+
   .ul1 {
     flex-direction: column;
     margin-top: 44px;
@@ -181,6 +183,13 @@
 
   .ul1 a {
     color: black;
+  }
+
+
+  /* size of open_sidebar_button svg */
+  .open_sidebar_button svg {
+    width: 24px;
+    height: 24px;
   }
 
   .close_sidebar_button {
@@ -192,8 +201,6 @@
     padding: 10px;
   }
 
-
-
   .open_sidebar_button {
     display: block;
   }
@@ -201,7 +208,6 @@
   #firstcheck:checked ~ .nav_links {
     transform: translate(0%);
     z-index: 3;
-    
   }
 
   .mobile-view {
@@ -231,20 +237,19 @@
   .logo4 {
     display: none;
   }
-.nav_container {
+  .nav_container {
     justify-content: space-between;
     padding-right: 15px;
   }
 
-/* sidebar_overly@media quary */
-  #firstcheck:checked ~ .sidebar_overly{
-  display:block;
-  position: fixed;
-  inset:0 ; /* inset: 0; means top, right, bottom, and left are all set to 0, so the element covers the entire area of its positioned parent */
-  background-color: #00000000;
-  z-index: 2;
-}
-
+  /* sidebar_overly@media quary */
+  #firstcheck:checked ~ .sidebar_overly {
+    display: block;
+    position: fixed;
+    inset: 0; /* inset: 0; means top, right, bottom, and left are all set to 0, so the element covers the entire area of its positioned parent */
+    background-color: #00000000;
+    z-index: 2;
+  }
 }
 
 @media (max-width: 950px) {
