@@ -172,7 +172,6 @@
   }
   .nav_container {
     justify-content: space-between;
-    /* padding-right: 15px; */
     padding-right: 57px;
   }
 
@@ -211,7 +210,6 @@
   .ul1 a {
     color: black;
   }
-
   /* size of open_sidebar_button svg */
   .open_sidebar_button svg {
     width: 24px;
