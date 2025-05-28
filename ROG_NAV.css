@@ -27,7 +27,7 @@
 /* Main navigation list */
 .ul1 {
   list-style-type: none;
-  /* color: white; */
+  color: white;
   display: flex;
   gap: 65px;
   position: relative;
