@@ -90,11 +90,6 @@
 
 /* ASUS gray logo */
 .logo2 {
-  /* width: 87px;
-  height: 29px; */
-  /* width: 75px;
-    height: 25px; */
-
   width: 72px;
   height: 28px;
   margin-top: 2px;
@@ -286,10 +281,6 @@
     background-color: #00000000;
     z-index: 2;
   }
-
-  /* .fa-magnifying-glass {
-    font-size: 18px !important;
-  } */
 
   .logo3 {
     width: 23px;
