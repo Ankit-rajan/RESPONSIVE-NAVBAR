@@ -29,8 +29,9 @@
   list-style-type: none;
   color: white;
   display: flex;
-  gap: 64px;
+  gap: 65px;
   position: relative;
+  margin-left: -11px;
 }
 
 /* Individual nav links */
@@ -54,28 +55,27 @@
 
 /* ROG main logo */
 .logo1 {
-  width: 190px;
-  height: 113px;
-  transition: all  ease-in-out .10s ;
-  margin-left: -50px;
+  width: 194px;
+  height: 115px;
+  transition: all ease-in-out 0.1s;
+  margin-left: -57px;
 }
 
 /* Right section     container: ASUS, icons, etc. */
 .nav_right {
   display: flex;
   align-items: center;
-     /* margin-right: -26px; */
+  margin-right: -26px;
   gap: 10px;
 }
 
 /* Vertical separator line */
 .vertical-line {
   border: none;
-border-left: 1px solid gray;
+  border-left: 1px solid gray;
   height: 21px;
   margin-left: 9px;
   width: 0px;
-  
 }
 
 /* Optional horizontal rule styling */
@@ -92,9 +92,12 @@ border-left: 1px solid gray;
 .logo2 {
   /* width: 87px;
   height: 29px; */
-  width: 75px;
-    height: 25px;
-    margin-top: 2px;
+  /* width: 75px;
+    height: 25px; */
+
+  width: 72px;
+  height: 28px;
+  margin-top: 2px;
 }
 
 /* Shopping cart icon */
@@ -153,12 +156,10 @@ border-left: 1px solid gray;
   display: none;
 }
 
-
 .search-icon {
   height: 35px;
   width: 29px;
 }
-
 
 @media (max-width: 1310px) {
   .ul1 a {
@@ -169,19 +170,19 @@ border-left: 1px solid gray;
   }
 }
 
-
 @media (max-width: 1025px) {
   .nav_links {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100vw;
+    width: 80vw;
     height: 100vh;
     flex-direction: column;
     background-color: white;
     transform: translate(-100%);
     transition: all 0.3s;
     padding-left: 20px;
+    margin-right: 0px;
   }
 
   .logo1 {
@@ -199,7 +200,6 @@ border-left: 1px solid gray;
   .ul1 a {
     color: black;
   }
-
 
   /* size of open_sidebar_button svg */
   .open_sidebar_button svg {
@@ -269,34 +269,30 @@ border-left: 1px solid gray;
   /* .fa-magnifying-glass {
     font-size: 18px !important;
   } */
-  
 
   .logo3 {
     width: 23px;
     height: 23px;
   }
 
- .search-icon {
+  .search-icon {
     height: 28px;
     width: 25px;
   }
-
 }
 
 @media (max-width: 1150px) {
- .nav_container {
+  .nav_container {
     justify-content: space-between;
     padding-right: 15px;
   }
   .logo1 {
     width: 190px;
     height: 113px;
-    transition: all ease-in-out .10s;
+    transition: all ease-in-out 0.1s;
     margin-left: -8px;
+  }
 }
-
-}
-
 
 @media (max-width: 950px) {
   .nav_container {
@@ -306,9 +302,8 @@ border-left: 1px solid gray;
 }
 
 @media (max-width: 360px) {
-.nav_container {
+  .nav_container {
     justify-content: space-between;
     padding-right: 15px;
-}
-
+  }
 }
