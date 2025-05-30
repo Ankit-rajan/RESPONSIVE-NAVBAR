@@ -172,6 +172,11 @@
   display: none;
 }
 
+.menu-label:hover  {
+
+  color: rgba(201, 61, 61, 0.816);
+
+}
 
 
 
@@ -317,6 +322,8 @@
   /* Submenu */
 .ul2 {
   display: block;
+  z-index: 4  ;
+
 }
 
 
