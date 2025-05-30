@@ -210,6 +210,10 @@
   .ul1 a {
     color: black;
   }
+
+  .menu-label{
+    color: black;
+  }
   /* size of open_sidebar_button svg */
   .open_sidebar_button svg {
     width: 24px;
