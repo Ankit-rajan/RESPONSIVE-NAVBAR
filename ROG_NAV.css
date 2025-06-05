@@ -209,7 +209,7 @@
   .submenu {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 97%;
     left: 0;
     background: white;
     z-index: 999;
@@ -221,17 +221,22 @@
   .ul1 li:hover > .submenu {
     display: block;
     /* margin-top: 0px; */
-margin-top: 2px;
+    margin-top: 1px;
     color: #000000;
     margin-left: -30px;
-    /* padding-top: 20px; */
+    padding-top: 0px;
     /* padding-bottom: 18px; */
     /* border-radius: 10px; */
   }
-  .ul1 > li {
-    padding: 15px 0px;
-  }
 
+  .ul1 > li {
+    padding: 17px 0px;
+  }
+  /* 
+  .ul1:hover > li{
+
+    color: red;
+  } */
   /* Hide checkbox/radio in desktop */
   .submenu-toggle {
     display: none;
@@ -256,10 +261,43 @@ margin-top: 2px;
   .ul2 {
     list-style-type: none;
     width: 605px;
+    padding-top: 36px;
+    padding-left: 33px;
   }
   .ul2 a:hover {
     color: rgba(249, 89, 89, 0.816);
   }
+
+
+
+
+
+  /* this is for columns */
+  .ul2 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+  }
+
+  .ul2 li {
+    width: 30%; /* Around 3 columns */
+    margin-bottom: 10px;
+  }
+
+  .ul2 hr.mobile-view-vertical-line {
+    display: none;
+  }
+
+  /* "ASUS TUF Gaming" – force to last row left */
+  .ul2 li:last-child {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+
+  /* ended */
+
+  
 
   .nav_links,
   .ul1 {
