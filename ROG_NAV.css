@@ -206,6 +206,12 @@
     /* padding: 10px 0px; */
   }
 
+  .ul1 a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+  }
+
   .submenu {
     display: none;
     position: absolute;
@@ -220,13 +226,10 @@
 
   .ul1 li:hover > .submenu {
     display: block;
-    /* margin-top: 0px; */
     margin-top: 1px;
     color: #000000;
     margin-left: -30px;
     padding-top: 0px;
-    /* padding-bottom: 18px; */
-    /* border-radius: 10px; */
   }
 
   .ul1 > li {
@@ -258,9 +261,14 @@
     font-size: 16px;
     /* padding: 20px 0px; */
   }
-  .ul2 {
+  .ul2,
+  .ul3,
+  .ul4,
+  .ul5,
+  .ul6,
+  .ul7 {
     list-style-type: none;
-    width: 605px;
+    width: 703px;
     padding-top: 36px;
     padding-left: 33px;
   }
@@ -268,40 +276,58 @@
     color: rgba(249, 89, 89, 0.816);
   }
 
+  .ul3 {
+    gap: 60px;
+  }
 
+  /* ul2 formation */
 
-
-
-  /* this is for columns */
   .ul2 {
     display: flex;
-    flex-wrap: wrap;
+    gap: 60px;
     max-width: 1200px;
+    flex-wrap: nowrap;
+  }
+
+  .ul2 .col .col1 .col2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .col1 {
+    padding-left: 25px;
+  }
+  .col2 {
+    padding-left: 35px;
   }
 
   .ul2 li {
-    width: 30%; /* Around 3 columns */
     margin-bottom: 10px;
   }
-
-  .ul2 hr.mobile-view-vertical-line {
-    display: none;
-  }
-
-  /* "ASUS TUF Gaming" – force to last row left */
-  .ul2 li:last-child {
+  .bottom-divider {
     width: 100%;
-    margin-top: 30px;
+    height: 1px;
+    background-color: #ccc;
+    margin: 30px 0 15px 0;
+    border: none;
   }
 
+  .asus-tuf-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 20px;
+    margin: 0 auto;
+    /* position: relative; Required for z-index */
+  }
 
-  /* ended */
-
-  
-
-  .nav_links,
-  .ul1 {
-    overflow: visible !important;
+  .asus-tuf {
+    display: inline-block;
+    font-weight: bold;
+    color: black;
+  }
+  .asus-tuf a {
+    color: #000;
   }
 }
 
@@ -312,9 +338,9 @@
 }
 
 @media (max-width: 1310px) {
-  .ul1 a {
+  /* .ul1 a {
     font-size: 13px;
-  }
+  } */
   .ul1 {
     gap: 40px;
   }
