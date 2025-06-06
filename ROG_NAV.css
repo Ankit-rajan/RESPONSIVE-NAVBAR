@@ -6,6 +6,10 @@
   font-family: Roboto Condensed, roboto, Microsoft JhengHei, sans-serif;
 }
 
+
+body{
+  background-color: aquamarine;
+}
 /* Navbar container setup */
 .nav_container {
   display: flex;
@@ -230,16 +234,12 @@
     color: #000000;
     margin-left: -30px;
     padding-top: 0px;
+        padding: 50px 50px 45px 50px;
   }
 
   .ul1 > li {
     padding: 17px 0px;
   }
-  /* 
-  .ul1:hover > li{
-
-    color: red;
-  } */
   /* Hide checkbox/radio in desktop */
   .submenu-toggle {
     display: none;
@@ -255,80 +255,73 @@
     display: none;
   }
 
+  /* ul2 formation */
   .ul2 a {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-size: 16px;
-    /* padding: 20px 0px; */
-  }
-  .ul2,
-  .ul3,
-  .ul4,
-  .ul5,
-  .ul6,
-  .ul7 {
+    font-size: 16px; }
+  .ul2 {
     list-style-type: none;
-    width: 703px;
-    padding-top: 36px;
-    padding-left: 33px;
-  }
+    width: 605px; }
   .ul2 a:hover {
-    color: rgba(249, 89, 89, 0.816);
-  }
-
-  .ul3 {
-    gap: 60px;
-  }
-
-  /* ul2 formation */
-
+    color: rgba(249, 89, 89, 0.816); }
   .ul2 {
     display: flex;
     gap: 60px;
     max-width: 1200px;
-    flex-wrap: nowrap;
-  }
-
+    flex-wrap: nowrap; }
   .ul2 .col .col1 .col2 {
     display: flex;
     flex-direction: column;
-    flex: 1;
-  }
-
+    flex: 1; }
   .col1 {
-    padding-left: 25px;
-  }
+    padding-left: 25px; }
   .col2 {
-    padding-left: 35px;
-  }
-
+    padding-left: 35px; }
   .ul2 li {
-    margin-bottom: 10px;
-  }
+    margin-bottom: 10px; }
   .bottom-divider {
     width: 100%;
     height: 1px;
     background-color: #ccc;
     margin: 30px 0 15px 0;
-    border: none;
-  }
-
+    border: none; }
   .asus-tuf-wrapper {
     width: 100%;
     max-width: 1200px;
     padding-left: 20px;
-    margin: 0 auto;
-    /* position: relative; Required for z-index */
-  }
-
+    margin: 0 auto; }
   .asus-tuf {
     display: inline-block;
     font-weight: bold;
-    color: black;
-  }
+    color: black; }
   .asus-tuf a {
-    color: #000;
-  }
+    color: #000; }
+  /* u2 formation end  */
+  
+  /* ul3 ul4 ul5 ul6 ul7  formation start */
+  .ul3, 
+  .ul4,
+  .ul5,
+  .ul6,
+  .ul7 {
+    display: inline-grid;
+    gap: 17px;
+    list-style-type: none;  }
+  .ul3{
+    width: 185px; }
+  .ul4{
+    width: 165px; }
+  .ul5{
+    width: 154px; }
+  .ul6{
+    gap: 20px;
+    width: 170px; }
+  .ul7{
+    width: 155px; }
+/* ul3 ul4 ul5 ul6 ul7  formation end  */
+
+
 }
 
 @media (max-width: 1400px), (max-width: 1350px) {
