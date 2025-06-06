@@ -6,8 +6,7 @@
   font-family: Roboto Condensed, roboto, Microsoft JhengHei, sans-serif;
 }
 
-
-body{
+body {
   background-color: aquamarine;
 }
 /* Navbar container setup */
@@ -17,11 +16,8 @@ body{
   align-items: center;
   height: 52px;
   justify-content: space-around;
-  /* margin-top: -2px; */
   width: 100vw;
   position: fixed;
-
-  /* z-index: 10; */
 }
 
 /* Wrapper for nav links */
@@ -143,7 +139,6 @@ body{
 .close_sidebar_button svg {
   fill: black;
 }
-
 .mobile-view {
   display: none;
 }
@@ -158,32 +153,29 @@ body{
 .sidebar_overly {
   display: none;
 }
+/* sidebaroverly end  */
 
 .search-icon {
   height: 35px;
   width: 29px;
   margin-left: 11px;
 }
-
 .menu-label:hover {
   color: rgba(201, 61, 61, 0.816);
 }
-
 .submenu-toggle {
   display: none;
 }
-
 .menu-label {
   display: flex;
 }
-
 .submenu {
   display: none;
   background-color: rgb(255, 254, 254);
   position: relative;
   padding: 10px;
-  /* z-index: 99; */
 }
+
 
 @keyframes slideIn {
   from {
@@ -197,25 +189,21 @@ body{
 }
 
 /* ARROW  */
-
 .arrow {
   display: none;
 }
 
 /* hover on big screen? */
-
 @media (min-width: 1024px) {
   .ul1 li {
     position: relative;
     /* padding: 10px 0px; */
   }
-
   .ul1 a {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 16px;
   }
-
   .submenu {
     display: none;
     position: absolute;
@@ -227,16 +215,14 @@ body{
     border: none;
     margin-top: 10px;
   }
-
   .ul1 li:hover > .submenu {
     display: block;
     margin-top: 1px;
     color: #000000;
     margin-left: -30px;
     padding-top: 0px;
-        padding: 50px 50px 45px 50px;
+    padding: 50px 50px 45px 50px;
   }
-
   .ul1 > li {
     padding: 17px 0px;
   }
@@ -244,7 +230,6 @@ body{
   .submenu-toggle {
     display: none;
   }
-
   .submenu-header .arrow1 {
     display: none; /* optional: hide > arrow on desktop */
   }
@@ -259,69 +244,85 @@ body{
   .ul2 a {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-size: 16px; }
+    font-size: 16px;
+  }
   .ul2 {
     list-style-type: none;
-    width: 605px; }
+    width: 605px;
+  }
   .ul2 a:hover {
-    color: rgba(249, 89, 89, 0.816); }
+    color: rgba(249, 89, 89, 0.816);
+  }
   .ul2 {
     display: flex;
     gap: 60px;
     max-width: 1200px;
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+  }
   .ul2 .col .col1 .col2 {
     display: flex;
     flex-direction: column;
-    flex: 1; }
+    flex: 1;
+  }
   .col1 {
-    padding-left: 25px; }
+    padding-left: 25px;
+  }
   .col2 {
-    padding-left: 35px; }
+    padding-left: 35px;
+  }
   .ul2 li {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+  }
   .bottom-divider {
     width: 100%;
     height: 1px;
     background-color: #ccc;
     margin: 30px 0 15px 0;
-    border: none; }
+    border: none;
+  }
   .asus-tuf-wrapper {
     width: 100%;
     max-width: 1200px;
     padding-left: 20px;
-    margin: 0 auto; }
+    margin: 0 auto;
+  }
   .asus-tuf {
     display: inline-block;
     font-weight: bold;
-    color: black; }
+    color: black;
+  }
   .asus-tuf a {
-    color: #000; }
+    color: #000;
+  }
   /* u2 formation end  */
-  
+
   /* ul3 ul4 ul5 ul6 ul7  formation start */
-  .ul3, 
+  .ul3,
   .ul4,
   .ul5,
   .ul6,
   .ul7 {
     display: inline-grid;
     gap: 17px;
-    list-style-type: none;  }
-  .ul3{
-    width: 185px; }
-  .ul4{
-    width: 165px; }
-  .ul5{
-    width: 154px; }
-  .ul6{
+    list-style-type: none;
+  }
+  .ul3 {
+    width: 185px;
+  }
+  .ul4 {
+    width: 165px;
+  }
+  .ul5 {
+    width: 154px;
+  }
+  .ul6 {
     gap: 20px;
-    width: 170px; }
-  .ul7{
-    width: 155px; }
-/* ul3 ul4 ul5 ul6 ul7  formation end  */
-
-
+    width: 170px;
+  }
+  .ul7 {
+    width: 155px;
+  }
+  /* ul3 ul4 ul5 ul6 ul7  formation end  */
 }
 
 @media (max-width: 1400px), (max-width: 1350px) {
