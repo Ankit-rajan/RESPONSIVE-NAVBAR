@@ -380,6 +380,7 @@ body {
     color: black;
     font-size: 13px;
   }
+  
 
   .menu-label {
     color: black;
@@ -483,6 +484,9 @@ body {
     height: 100vh;
     z-index: 999;
     padding: 20px;
+    overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
   }
 
   .submenu-toggle:checked + .menu-label + .submenu {
@@ -492,6 +496,21 @@ body {
     margin-top: -40px;
     margin-left: 0px;
     padding-left: 62px;
+    padding-bottom: 100px;
+  }
+
+
+  .asus-tuf-wrapper a {
+font-size: 20px;
+  }
+.asus-tuf {
+    display: inline-block;
+    /* font-weight: bold; */
+    color: black;
+    padding-top: 20px;
+  }
+  .bottom-divider{
+    display: none;
   }
 
   .ul3,
@@ -539,22 +558,35 @@ body {
     margin-left: -36px;
     gap: 10px;
   }
+
+  /* sidebar adjustment */
+  .menu-label {
+    display: flex;
+    justify-content: space-between;
+  }
+  .arrow {
+    display: block;
+    justify-self: end;
+    padding-right: 20px;
+     line-height: 1;
+    font-weight: 100;
+     font-size: 47px;
+  }
+
+  /* end  */
+
   .arrow1 {
     font-size: 47px; /* Increase arrow size */
     margin-right: 8px; /* Space between arrow and text */
     display: inline-block;
     line-height: 1;
     color: red;
-    font-weight: 300;
+    font-weight: 150;
   }
 
   .ul2 li {
     margin: 35px 0;
     margin-top: 10px;
-  }
-  .arrow {
-    display: block;
-    justify-self: end;
   }
 }
 
