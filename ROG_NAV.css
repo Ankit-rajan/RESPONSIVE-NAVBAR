@@ -380,7 +380,6 @@ body {
     color: black;
     font-size: 13px;
   }
-  
 
   .menu-label {
     color: black;
@@ -485,8 +484,8 @@ body {
     z-index: 999;
     padding: 20px;
     overflow-y: auto;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 
   .submenu-toggle:checked + .menu-label + .submenu {
@@ -499,17 +498,16 @@ body {
     padding-bottom: 100px;
   }
 
-
   .asus-tuf-wrapper a {
-font-size: 20px;
+    font-size: 20px;
   }
-.asus-tuf {
+  .asus-tuf {
     display: inline-block;
     /* font-weight: bold; */
     color: black;
-    padding-top: 20px;
+    padding-top: 10px;
   }
-  .bottom-divider{
+  .bottom-divider {
     display: none;
   }
 
@@ -568,9 +566,9 @@ font-size: 20px;
     display: block;
     justify-self: end;
     padding-right: 20px;
-     line-height: 1;
+    line-height: 1;
     font-weight: 100;
-     font-size: 47px;
+    font-size: 47px;
   }
 
   /* end  */
