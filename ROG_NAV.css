@@ -384,7 +384,7 @@ body {
 
   .menu-label {
     color: black;
-    font-size: 19px;
+    font-size: 25px;
   }
   /* size of open_sidebar_button svg */
   .open_sidebar_button svg {
@@ -472,13 +472,13 @@ body {
   }
   .ul2 a {
     color: #000000;
-    font-size: 19px;
+    font-size: 21px;
   }
 
   .submenu-toggle:checked ~ .submenu {
     display: block;
     position: absolute;
-    background-color: #dc4c4c; /* or any theme */
+    background-color: #ffffff; /* or any theme */
     top: 0;
     left: 0;
     width: 100%;
@@ -489,11 +489,45 @@ body {
 
   .submenu-toggle:checked + .menu-label + .submenu {
     display: block;
-    animation: slideIn 0.3s ease;
+    animation: slideIn 0.5s ease;
     width: 100%;
-    margin-top: -23px;
+    margin-top: -40px;
     margin-left: 0px;
+    padding-left: 62px;
   }
+
+  .ul3,
+  .ul4,
+  .ul5,
+  .ul6,
+  .ul7{
+    list-style: none;
+    animation: slideIn 0.6s ease;
+    width: 100%;
+    margin-left: 0px;
+            margin-top: 14px;
+  }
+
+  .ul3 a,
+  .ul4 a,
+  .ul5 a,
+  .ul6 a,
+  .ul7 a{
+    font-size: 21px;
+  }
+  .ul3 li,
+  .ul4 li,
+  .ul5 li,
+  .ul6 li,
+  .ul7 li{
+  margin-bottom: 18px; /* Adjust the value as needed */
+}
+.ul2 {
+  list-style: none;
+  padding-left: 0;
+      animation: slideIn 0.6s ease;
+
+}
 
   .submenu-header {
     font-weight: bold;
@@ -501,12 +535,22 @@ body {
     display: block;
     cursor: pointer;
     color: black;
+    font-size: 25px;
+     animation: slideIn 0.6s ease;
+     display: flex;
+  align-items: center; 
+          margin-left: -36px;
+          gap: 10px;
   }
+.arrow1 {
+  font-size: 47px; /* Increase arrow size */
+  margin-right: 8px; /* Space between arrow and text */
+  display: inline-block;
+  line-height: 1;
+  color: red;
+}
 
-  .ul2 {
-    list-style: none;
-    padding-left: 0;
-  }
+
 
   .ul2 li {
     margin: 10px 0;
