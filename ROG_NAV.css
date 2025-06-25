@@ -176,6 +176,23 @@ body {
   padding: 10px;
 }
 
+ .search-bar-div .searchbox {
+  display: none;
+  position: absolute;
+  top: 60px; /* adjust to fit below navbar */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+#searchbarr:checked ~ .search-bar-div .searchbox {
+  display: block;
+   animation: slidedown 0.8s ease;
+
+}
+
 @keyframes slideIn {
   from {
     transform: translateX(100%);
