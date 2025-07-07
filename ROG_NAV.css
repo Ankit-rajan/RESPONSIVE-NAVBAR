@@ -9,6 +9,17 @@
 body {
   background-color: rgb(255, 255, 255);
 }
+
+.logo3:hover,
+.logo4:hover,
+.search-icon:hover {
+  fill:  rgba(201, 70, 70, 0.816);             /* for SVG */
+  filter: brightness(0) saturate(100%) invert(17%) sepia(100%) saturate(7492%) hue-rotate(358deg) brightness(97%) contrast(117%);
+  cursor: pointer;
+
+}
+
+
 /* Navbar container setup */
 .nav_container {
   display: flex;
@@ -111,8 +122,8 @@ body {
 
 /* User avatar icon */
 .logo4 {
-  width: 22px;
-  height: 22px;
+  width: 27x;
+  height: 27px;
 }
 
 /* FontAwesome icon styling */
@@ -157,8 +168,10 @@ body {
 
 .search-icon {
   height: 35px;
-  width: 29px;
-  margin-left: 11px;
+  width: 26px;
+  margin-left: 12px;
+  margin-top: 6px;
+  margin-right: 5px;
 }
 .menu-label:hover {
   color: rgba(201, 61, 61, 0.816);
@@ -176,22 +189,93 @@ body {
   padding: 10px;
 }
 
- .search-bar-div .searchbox {
+/* .search-bar-div .searchbox {
   display: none;
   position: absolute;
-  top: 60px; /* adjust to fit below navbar */
+  top: 60%; 
   left: 50%;
   transform: translateX(-50%);
   background: #222;
   padding: 10px;
   border-radius: 6px;
+  width: 300px;
+  height: 300px;
 }
 
 #searchbarr:checked ~ .search-bar-div .searchbox {
   display: block;
-   animation: slidedown 0.8s ease;
+  animation: slidedown 0.8s ease;
+} */
 
+/* Hide by default */
+.search-bar-div .searchbox {
+  display: none;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-100%);
+  background: #222;
+  /* border-radius: 6px; */
+
+  width: 100vw;
+  height: 40vh;
+  padding: 0 20px;
+
+  justify-content: center;
+  align-items: center;
+  animation: none;
 }
+
+/* Input style */
+.search {
+  width: 53%;
+  height: 50px;
+  padding: 0 15px;
+  font-size: 18px;
+  border: 1px solid white;
+  outline: none;
+  margin-left: -60px;
+  margin-top: -135px;
+  background: #222;
+  color: white;
+  caret-color: white;
+}
+
+/* Show on checkbox check */
+#searchbarr:checked ~ .search-bar-div .searchbox {
+  display: flex; /* Use flex not block here! */
+  animation: slidedown 0.2s ease forwards;
+  top: 50px;
+}
+
+/* Slide animation */
+@keyframes slidedown {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* #smallPlace {
+  background-color: red;
+  width: 100%;
+  height: 300px;
+  margin-top: 52px;
+  position: absolute;
+  top: -45%;
+  display: none;
+  transform: translateX(-50%);
+}
+
+#searchbarr:checked ~ #smallPlace {
+  display: block;
+  top: 0%;
+  animation: slidedown 0.8s ease;
+} */
 
 @keyframes slideIn {
   from {
@@ -214,6 +298,9 @@ body {
   .ul1 li {
     position: relative;
     /* padding: 10px 0px; */
+  }
+  .nav_container {
+    z-index: 1;
   }
   .ul1 a {
     text-decoration: none;
@@ -346,6 +433,9 @@ body {
     margin-left: 0px;
   }
 }
+.nav_container {
+  z-index: 1;
+}
 
 @media (max-width: 1310px) {
   .ul1 {
@@ -354,6 +444,7 @@ body {
   .nav_container {
     justify-content: space-between;
     padding-right: 57px;
+    z-index: 1;
   }
   .logo1 {
     margin-left: 0px;
@@ -615,6 +706,7 @@ body {
   .nav_container {
     justify-content: space-between;
     padding-right: 15px;
+    z-index: 1;
   }
 }
 
